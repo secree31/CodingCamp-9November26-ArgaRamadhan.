@@ -1,0 +1,396 @@
+{
+  "pbtResults": {
+    "2.6 Write property test for `State_addTransaction` round-trip (Property 1)": {
+      "status": "not_run",
+      "lastRunTimestamp": 1794498442419
+    },
+    "2.8 Write property test for `State_deleteTransaction` (Property 3)": {
+      "status": "passed",
+      "lastRunTimestamp": 1794533139921
+    },
+    "2.10 Write property test for sort tiebreaker (Property 8)": {
+      "status": "passed",
+      "lastRunTimestamp": 1794534262067
+    },
+    "2.9 Write property test for sort immutability (Property 7)": {
+      "status": "passed",
+      "lastRunTimestamp": 1794534579798
+    },
+    "2.11 Write property test for theme round-trip (Property 9)": {
+      "status": "passed",
+      "lastRunTimestamp": 1794534665711
+    }
+  },
+  "executionHistory": {
+    "1. Scaffold project structure and entry point": [
+      {
+        "executionId": "b47e8faf-59a7-43bf-aa13-4e89c8694fdb",
+        "chatSessionId": "sess_c739d062-0ff3-4364-9fbf-69228704e39c",
+        "timestamp": 1794497205622
+      },
+      {
+        "executionId": "b47e8faf-59a7-43bf-aa13-4e89c8694fdb",
+        "chatSessionId": "sess_c739d062-0ff3-4364-9fbf-69228704e39c",
+        "timestamp": 1794497449097
+      }
+    ],
+    "2.1 Define `AppState` global object and `DEFAULT_CATEGORIES`": [
+      {
+        "executionId": "b2946dc9-f4c1-47ea-a860-af0667e3eaa5",
+        "chatSessionId": "sess_4c660bd2-b1ab-4132-af34-e0bffabc449a",
+        "timestamp": 1794497463021
+      },
+      {
+        "executionId": "b2946dc9-f4c1-47ea-a860-af0667e3eaa5",
+        "chatSessionId": "sess_4c660bd2-b1ab-4132-af34-e0bffabc449a",
+        "timestamp": 1794497505845
+      }
+    ],
+    "2.2 Implement `State_load()` — LocalStorage hydration with corruption handling": [
+      {
+        "executionId": "3fd3b206-7870-495e-9b57-1265833144e1",
+        "chatSessionId": "sess_e7c400bf-8ab5-4d63-b105-81fd6d06fb20",
+        "timestamp": 1794497554235
+      },
+      {
+        "executionId": "3fd3b206-7870-495e-9b57-1265833144e1",
+        "chatSessionId": "sess_e7c400bf-8ab5-4d63-b105-81fd6d06fb20",
+        "timestamp": 1794497607084
+      }
+    ],
+    "2.3 Implement `State_save()`, `State_addTransaction()`, and `State_deleteTransaction()`": [
+      {
+        "executionId": "fe108a4c-852a-4d52-a5e8-7c713319bda8",
+        "chatSessionId": "sess_8dd94060-f421-459b-b0bd-28c735682712",
+        "timestamp": 1794497636832
+      },
+      {
+        "executionId": "fe108a4c-852a-4d52-a5e8-7c713319bda8",
+        "chatSessionId": "sess_8dd94060-f421-459b-b0bd-28c735682712",
+        "timestamp": 1794497823378
+      }
+    ],
+    "2.4 Implement `State_addCategory()`, `State_setTheme()`, and `State_setSortKey()`": [
+      {
+        "executionId": "72e6f837-3750-498f-8b07-54cb23013a16",
+        "chatSessionId": "sess_29607d72-248f-45f8-b647-7c9975389d2c",
+        "timestamp": 1794497886489
+      },
+      {
+        "executionId": "72e6f837-3750-498f-8b07-54cb23013a16",
+        "chatSessionId": "sess_29607d72-248f-45f8-b647-7c9975389d2c",
+        "timestamp": 1794497940746
+      }
+    ],
+    "2.5 Implement `State_getSortedTransactions()`": [
+      {
+        "executionId": "3f39fa1f-ffd1-4a79-b5f2-59a3bb427640",
+        "chatSessionId": "sess_2b11fce8-8bb6-47ea-ac25-fc69f48b4cd0",
+        "timestamp": 1794497958512
+      },
+      {
+        "executionId": "3f39fa1f-ffd1-4a79-b5f2-59a3bb427640",
+        "chatSessionId": "sess_2b11fce8-8bb6-47ea-ac25-fc69f48b4cd0",
+        "timestamp": 1794497992069
+      }
+    ],
+    "2. Implement the State module (`js/state.js`)": [
+      {
+        "executionId": "3f39fa1f-ffd1-4a79-b5f2-59a3bb427640",
+        "chatSessionId": "sess_2b11fce8-8bb6-47ea-ac25-fc69f48b4cd0",
+        "timestamp": 1794497992265
+      }
+    ],
+    "2.6 Write property test for `State_addTransaction` round-trip (Property 1)": [
+      {
+        "executionId": "2aa43c55-cde5-419e-ae18-35b736408095",
+        "chatSessionId": "sess_ecd9ba9b-1447-4fde-9978-53f53537b82f",
+        "timestamp": 1794498076550
+      },
+      {
+        "executionId": "2aa43c55-cde5-419e-ae18-35b736408095",
+        "chatSessionId": "sess_ecd9ba9b-1447-4fde-9978-53f53537b82f",
+        "timestamp": 1794498462907
+      }
+    ],
+    "2.7 Write property test for invalid input rejection (Property 2)": [
+      {
+        "executionId": "b1ffb1f8-3b15-451a-aee4-69a8e3a93fd1",
+        "chatSessionId": "sess_fdb8baee-a103-4c87-b139-59e81eb80695",
+        "timestamp": 1794498479409
+      },
+      {
+        "executionId": "b1ffb1f8-3b15-451a-aee4-69a8e3a93fd1",
+        "chatSessionId": "sess_fdb8baee-a103-4c87-b139-59e81eb80695",
+        "timestamp": 1794498617319
+      }
+    ],
+    "2.8 Write property test for `State_deleteTransaction` (Property 3)": [
+      {
+        "executionId": "811b7268-600c-4eb0-b69c-8e2435f9c3c8",
+        "chatSessionId": "sess_6f5e97ef-8b20-406d-b6d4-abe2583d4663",
+        "timestamp": 1794498648990
+      },
+      {
+        "executionId": "22f9fc05-c30a-4aec-b382-ec8f1721aff1",
+        "chatSessionId": "sess_889e7a64-af7f-449a-a341-ae382b9c2f3d",
+        "timestamp": 1794532556720
+      },
+      {
+        "executionId": "22f9fc05-c30a-4aec-b382-ec8f1721aff1",
+        "chatSessionId": "sess_889e7a64-af7f-449a-a341-ae382b9c2f3d",
+        "timestamp": 1794533152671
+      }
+    ],
+    "4.1 Implement `Chart_init(canvasId)`": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533238127
+      },
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533270194
+      },
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794534699178
+      }
+    ],
+    "5.1 Implement `UI_renderBalance(transactions)`": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533238852
+      },
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533275629
+      },
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794534705002
+      }
+    ],
+    "5.2 Implement `UI_renderTransactionList(transactions, onDelete)`": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533239191
+      },
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794534709390
+      },
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794535107557
+      }
+    ],
+    "5.3 Implement `UI_renderCategoryDropdown(categories)`": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533239735
+      },
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794534714361
+      },
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794535112172
+      }
+    ],
+    "5.4 Implement form feedback helpers: `UI_showFormError`, `UI_clearFormErrors`, `UI_showStorageWarning`, `UI_showEmptyState`": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533240115
+      },
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794534719961
+      },
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794535117430
+      }
+    ],
+    "5.5 Implement `UI_applyTheme(theme)` and `UI_setSortButtonState(activeKey)`": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533240516
+      },
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794534725553
+      },
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794535121826
+      }
+    ],
+    "6. Checkpoint — Core modules complete": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533240926
+      }
+    ],
+    "7.1 Bootstrap: `State_load`, `Chart_init`, and initial full render": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533241365
+      }
+    ],
+    "7.2 Implement `renderAll()` and wire add-transaction form": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533241784
+      }
+    ],
+    "7.3 Wire delete, sort controls, and add-category form": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533242336
+      }
+    ],
+    "7.4 Wire theme toggle": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533242764
+      }
+    ],
+    "8.1 Define CSS custom properties for light and dark themes": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533243130
+      }
+    ],
+    "8.2 Style the five main sections and responsive layout": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533243715
+      }
+    ],
+    "8.3 Style interactive elements, form validation, and accessibility states": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533244104
+      }
+    ],
+    "8.4 Style the transaction list (scrollable container) and balance display": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533244394
+      }
+    ],
+    "9. Checkpoint — Full render cycle and UI complete": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533245035
+      }
+    ],
+    "10.1 Add the add-category sub-form to `index.html`": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533245536
+      }
+    ],
+    "10.2 Verify category persistence and restore on load": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533246079
+      }
+    ],
+    "11. Final checkpoint — Ensure all tests pass": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533246336
+      }
+    ],
+    "2.9 Write property test for sort immutability (Property 7)": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533255143
+      },
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794534680309
+      }
+    ],
+    "2.10 Write property test for sort tiebreaker (Property 8)": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533260063
+      },
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794534686402
+      }
+    ],
+    "2.11 Write property test for theme round-trip (Property 9)": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794533265250
+      },
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794534692838
+      }
+    ],
+    "5. Implement the UI module (`js/ui.js`)": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794535121948
+      }
+    ],
+    "4.2 Implement `Chart_update(transactions)` with category aggregation": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794535131499
+      }
+    ],
+    "4.3 Implement `Chart_showEmpty()`": [
+      {
+        "executionId": "bd85863c-d491-4096-9920-a407d680ff7a",
+        "chatSessionId": "sess_952351f2-104f-42a2-93ed-86bcb3d31a36",
+        "timestamp": 1794535136961
+      }
+    ]
+  }
+}

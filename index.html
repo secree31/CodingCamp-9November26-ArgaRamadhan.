@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Expense &amp; Budget Visualizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+
+    <header class="app-header">
+      <h1>Expense &amp; Budget Visualizer</h1>
+      <button type="button" id="theme-toggle" class="btn btn-ghost" aria-pressed="false">Dark mode</button>
+    </header>
+
+    <!-- Total balance + spending limit -->
+    <section class="card balance" id="balance-card" aria-labelledby="balance-label">
+      <p class="balance-label" id="balance-label">Total balance</p>
+      <p class="balance-amount" id="total-balance" aria-live="polite">$0.00</p>
+
+      <div class="limit">
+        <div class="meter" role="progressbar" aria-label="Spending against limit"
+            aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="limit-meter">
+          <div class="meter-fill" id="limit-fill"></div>
+        </div>
+        <p class="limit-status" id="limit-status">No spending limit set</p>
+        <div class="limit-field">
+          <label for="limit-input">Spending limit</label>
+          <input type="number" id="limit-input" min="0" step="0.01" inputmode="decimal" placeholder="e.g. 500">
+        </div>
+      </div>
+    </section>
+
+    <!-- Input form -->
+    <section class="card" aria-labelledby="form-title">
+      <h2 id="form-title">Add transaction</h2>
+      <form id="transaction-form" novalidate>
+        <div class="field">
+          <label for="item-name">Item name</label>
+          <input type="text" id="item-name" maxlength="60" autocomplete="off" placeholder="e.g. Lunch">
+          <p class="error" id="name-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="item-amount">Amount</label>
+          <input type="number" id="item-amount" min="0" step="0.01" inputmode="decimal" placeholder="0.00">
+          <p class="error" id="amount-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="item-category">Category</label>
+          <select id="item-category">
+            <option value="">Select a category</option>
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Fun">Fun</option>
+          </select>
+          <p class="error" id="category-error" role="alert"></p>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Add transaction</button>
+      </form>
+    </section>
+
+    <div class="grid">
+      <!-- Transaction list -->
+      <section class="card" aria-labelledby="list-title">
+        <div class="card-head">
+          <h2 id="list-title">Transactions</h2>
+          <div class="sort">
+            <label for="sort-select">Sort by</label>
+            <select id="sort-select">
+              <option value="newest">Newest first</option>
+              <option value="amount-desc">Amount: high to low</option>
+              <option value="amount-asc">Amount: low to high</option>
+              <option value="category">Category</option>
+            </select>
+          </div>
+        </div>
+        <ul class="tx-list" id="transaction-list"></ul>
+        <p class="empty" id="list-empty">No transactions yet. Add your first one above.</p>
+      </section>
+
+      <!-- Chart -->
+      <section class="card" aria-labelledby="chart-title">
+        <h2 id="chart-title">Spending by category</h2>
+        <div class="chart-wrap">
+          <canvas id="category-chart" role="img" aria-label="Pie chart of spending by category"></canvas>
+          <p class="empty" id="chart-empty">Your chart will appear after you add a transaction.</p>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
